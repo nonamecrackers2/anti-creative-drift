@@ -1,0 +1,4 @@
+{
+	"command.anticreativedrift.set.config.success": "Set config option to %s",
+	"command.anticreativedrift.set.config.fail": "Config value did not change"
+}
