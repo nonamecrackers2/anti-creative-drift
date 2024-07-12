@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "anticreativedrift",
-	"version": "${version}",
+	"version": "1.0",
 	"name": "Anti Creative Drift",
 	"description": "Disables the 'drift' when flying in creative",
 	"authors": [
@@ -23,8 +23,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
-		"java": ">=21",
+		"minecraft": ">=1.20.1",
+		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {

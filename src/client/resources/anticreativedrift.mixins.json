@@ -1,7 +1,7 @@
 {
 	"required": true,
 	"package": "dev.nonamecrackers2.anticreativedrift.mixin",
-	"compatibilityLevel": "JAVA_21",
+	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"MixinLocalPlayer",
 		"MixinMinecraft"
