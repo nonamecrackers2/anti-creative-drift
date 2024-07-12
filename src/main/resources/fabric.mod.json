@@ -11,12 +11,15 @@
 	"icon": "assets/anticreativedrift/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"dev.nonamecrackers2.anticreativedrift.AntiCreativeDrift"
 		]
 	},
 	"mixins": [
-		"anticreativedrift.mixins.json"
+		{
+			"config": "anticreativedrift.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
