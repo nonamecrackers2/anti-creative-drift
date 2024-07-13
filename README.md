@@ -5,7 +5,8 @@
 ![Client](https://img.shields.io/badge/environment-client-1976d2?style=flat-square)
 ![CurseForge Version](https://img.shields.io/curseforge/v/1062711?style=flat-square&label=Latest)
 [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1062711?style=flat-square&logo=Curseforge&label=CurseForge&color=orange)](https://www.curseforge.com/minecraft/mc-mods/anti-creative-drift)
-[![Modrinth Downloads](https://img.shields.io/modrinth/dt/2dw28EeG?style=flat-square&logo=modrinth&logoColor=lime&label=Modrinth&labelColor=lime)](https://modrinth.com/mod/anti-creative-drift)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/2dw28EeG?style=flat-square&logo=modrinth&logoColor=light_green&label=Modrinth&color=light_green)
+](https://modrinth.com/mod/anti-creative-drift)
 
 <a href="https://modrinth.com/mod/fabric-api">
   <img src="https://camo.githubusercontent.com/90934aeba21f02a2f467ff5a8b3bf00edb6a26663f18e96aa6c82a435cdf7450/68747470733a2f2f692e696d6775722e636f6d2f4f6c31546366382e706e67" alt="Fabric API" height="50">
