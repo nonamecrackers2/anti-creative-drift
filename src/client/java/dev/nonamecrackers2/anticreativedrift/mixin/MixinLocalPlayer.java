@@ -34,7 +34,7 @@ public class MixinLocalPlayer extends AbstractClientPlayer
 	{
 		if (this.isApplyingMovement && this.input.getMoveVector().length() == 0.0F)
 		{
-			if (this.isCreative() && !this.onGround())
+			if (this.isCreative() && !this.isOnGround())
 			{
 				float factor = Mth.clamp((float)this.diminishTicks / (float)AntiCreativeDriftConfig.getConfig().getDriftDiminishTicks(), 0.0F, 1.0F);
 				this.setDeltaMovement(this.getDeltaMovement().multiply((double)factor, 1.0D, (double)factor));

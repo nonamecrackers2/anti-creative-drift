@@ -32,7 +32,7 @@ public class AntiCreativeDriftCommands
 		int value = IntegerArgumentType.getInteger(context, "value");
 		if (AntiCreativeDriftConfig.getConfig().setDriftDiminishTicks(value))
 		{
-			source.sendSuccess(() -> Component.translatable("command.anticreativedrift.set.config.success", value), true);
+			source.sendSuccess(Component.translatable("command.anticreativedrift.set.config.success", value), true);
 			return 1;
 		}
 		else
