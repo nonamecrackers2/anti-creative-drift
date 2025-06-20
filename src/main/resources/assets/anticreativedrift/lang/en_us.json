@@ -1,4 +1,4 @@
 {
-	"command.anticreativedrift.set.config.success": "Set config option to %s",
-	"command.anticreativedrift.set.config.fail": "Config value did not change"
+	"gui.anticreativedrift.config.driftDiminishTicks.title": "Drift Diminish Ticks",
+	"gui.anticreativedrift.config.driftDiminishTicks.description": "Specifies the amount of ticks it takes for the drift to fully diminish"
 }

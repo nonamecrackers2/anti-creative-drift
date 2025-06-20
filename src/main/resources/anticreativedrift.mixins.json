@@ -2,10 +2,9 @@
 	"required": true,
 	"package": "dev.nonamecrackers2.anticreativedrift.mixin",
 	"compatibilityLevel": "JAVA_17",
+	"refmap": "anticreativedrift.refmap.json",
 	"mixins": [
 		"MixinLocalPlayer"
 	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+	"minVersion": "0.8"
 }
