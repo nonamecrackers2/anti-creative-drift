@@ -32,27 +32,27 @@ public class MixinLocalPlayer extends AbstractClientPlayer
 	@Inject(method = "serverAiStep", at = @At("HEAD"))
 	public void anticreativedrift$stopDrift_serverAiStep(CallbackInfo ci)
 	{
-		if (this.isApplyingMovement && this.input.getMoveVector().length() == 0.0F)
+		if (this.getAbilities().flying)
 		{
-			if (this.isCreative() && !this.onGround())
+			if (this.isApplyingMovement && this.input.getMoveVector().length() == 0.0F)
 			{
-				float factor = Mth.clamp((float)this.diminishTicks / (float)AntiCreativeDriftConfig.getConfig().getDriftDiminishTicks(), 0.0F, 1.0F);
-				this.setDeltaMovement(this.getDeltaMovement().multiply((double)factor, 1.0D, (double)factor));
-			}
-			if (this.diminishTicks > 0)
-			{
-				this.diminishTicks--;
-				if (this.diminishTicks == 0)
+					float factor = Mth.clamp((float)this.diminishTicks / (float)AntiCreativeDriftConfig.INSTANCE.driftDiminishTicks.get(), 0.0F, 1.0F);
+					this.setDeltaMovement(this.getDeltaMovement().multiply((double)factor, 1.0D, (double)factor));
+				if (this.diminishTicks > 0)
 				{
-					this.setDeltaMovement(this.getDeltaMovement().multiply(0.0D, 1.0D, 0.0D));
-					this.isApplyingMovement = false;
+					this.diminishTicks--;
+					if (this.diminishTicks == 0)
+					{
+						this.setDeltaMovement(this.getDeltaMovement().multiply(0.0D, 1.0D, 0.0D));
+						this.isApplyingMovement = false;
+					}
 				}
 			}
-		}
-		if (this.input.getMoveVector().length() > 0.0F)
-		{
-			this.diminishTicks = AntiCreativeDriftConfig.getConfig().getDriftDiminishTicks();
-			this.isApplyingMovement = true;
+			if (this.input.getMoveVector().length() > 0.0F)
+			{
+				this.diminishTicks = AntiCreativeDriftConfig.INSTANCE.driftDiminishTicks.get();
+				this.isApplyingMovement = true;
+			}
 		}
 	}
 }
