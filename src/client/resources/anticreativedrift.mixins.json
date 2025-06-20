@@ -3,7 +3,8 @@
 	"package": "dev.nonamecrackers2.anticreativedrift.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"MixinLocalPlayer"
+		"MixinLocalPlayer",
+		"MixinMinecraft"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "anticreativedrift",
+	"version": "1.0",
+	"name": "Anti Creative Drift",
+	"description": "Disables the 'drift' when flying in creative",
+	"authors": [
+		"nonamecrackers2"
+	],
+	"license": "Apache 2.0",
+	"icon": "assets/anticreativedrift/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.nonamecrackers2.anticreativedrift.AntiCreativeDrift"
+		]
+	},
+	"mixins": [
+		{
+			"config": "anticreativedrift.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
